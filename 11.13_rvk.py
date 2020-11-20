@@ -23,12 +23,21 @@ counter = 0
 arr = int(input())
 if arr < 1:
     print('Your number is negative or 0')
-    break
-else if arr < 2:
+    
+elif arr < 2:
     print('1 is neither prime or non-prime')
-    break
+
+
 else:
-    for j in range(2, arr)
-        for i in range(2, arr//2):
-                if (!(arr % i)) == 0:
-                    counter += i
+    for i in range(2, arr+1):
+        for j in range(2, i):
+            if (i % j) == 0:
+                break
+            else:
+                print(i)
+                print(counter)
+                counter += i
+                
+                break
+                    
+print(counter)
