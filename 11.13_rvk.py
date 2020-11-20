@@ -8,14 +8,17 @@ while arr != 0:
 print('Lenght of arr =', counter)
 
 
-
+def funkciq(arr):
+    counter = 0
+    while arr >= 2:
+        arr = math.sqrt(arr)
+        counter += 1
+    print(arr,counter)
+    
 arr = int(input())
 arr2 = arr
-counter = 0
-while arr >= 2:
-    arr = math.sqrt(arr)
-    counter += 1
-print(arr,counter)
+funkciq(arr)
+
 
 
 
